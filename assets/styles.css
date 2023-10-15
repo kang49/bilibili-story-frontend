@@ -1,6 +1,12 @@
-@font-face {
-    font-family: "Prompt";
-    src: url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+/* @font-face {
+    font-family: "g49";
+    src: url("/g49font.ttf");
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.prompt-font {
+    font-family: "Prompt", sans-serif;
 }
 
 .navbar {
@@ -9,7 +15,10 @@
     color: white;
 }
 
-.test-gar {
-    background: rgb(7,21,144);
-    background: linear-gradient(180deg, rgba(7,21,144,0%) 35%, rgba(13,10,193,1) 50%, rgba(7,6,99,1) 100%);
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Prompt", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }

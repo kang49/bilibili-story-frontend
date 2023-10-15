@@ -24,3 +24,4 @@ logs
 !.env.example
 yarn.lock
 .vscode/settings.json
+package-lock.json
