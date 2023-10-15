@@ -5,9 +5,13 @@
             <NuxtLink to="/">Bilibili Story Builder</NuxtLink>
         </div>
         <nav class="flex items-center gap-[50px]">
-            <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/playgroud">Playgroud</NuxtLink>
-            <NuxtLink to="/contact">Contact</NuxtLink>
+            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/'}" to="/">Home</NuxtLink>
+            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/playground'}" to="/playgroud">Playgroud</NuxtLink>
+            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/contact'}" to="/contact">Contact</NuxtLink>
         </nav>
     </div>
 </template>
+
+<script setup>
+    const path = ref(useRoute().path);
+</script>
