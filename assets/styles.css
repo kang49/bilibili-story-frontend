@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Prompt";
+    src: url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+}
+
+.navbar {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.test-gar {
+    background: rgb(7,21,144);
+    background: linear-gradient(180deg, rgba(7,21,144,0%) 35%, rgba(13,10,193,1) 50%, rgba(7,6,99,1) 100%);
+}
