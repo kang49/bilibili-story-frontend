@@ -14,4 +14,4 @@
 
 <script setup>
     const path = ref(useRoute().path);
-</script>
+</script>w
