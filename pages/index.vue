@@ -79,11 +79,13 @@
                                 </h4>
                             </div>
                             <div class="bg-white/20 rounded-[60px] p-5 ml-[90px] mt-[20px] max-w-[500px]">
-                                <h4 class="leading-[50px]">• Open the | Files app on your iOS device.<br>• In the | Files app, navigate to the
-                                    location where you downloaded the Bilibili Story Builder shortcut. Typically, it can be
+                                <h4 class="flex leading-[50px]">• Open the <img
+                                        class="w-[30px] h-[30px] mx-[10px] my-auto items-center" src="/img/files-icon.png">
+                                    Files app on your iOS device.</h4>
+                                <h4 class="leading-[50px]">• In the Files app, navigate to the location where you downloaded
+                                    the Bilibili Story Builder shortcut. Typically, it can be
                                     found in the Downloads folder.<br>• Tap on the shortcut file to select it.<br>• Tap the
-                                    Add Shortcut button.<br>• Confirm your selection by tapping Done.
-                                </h4>
+                                    Add Shortcut button.<br>• Confirm your selection by tapping Done.</h4>
                             </div>
                             <a href="https://github.com/kang49/bilibili-story-sharing" target="_blank">
 
@@ -107,8 +109,8 @@
                                 </div>
                             </a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </div></template>
