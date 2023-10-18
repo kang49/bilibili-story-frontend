@@ -4,14 +4,14 @@
         <div>
             <NuxtLink to="/">Bilibili Story Builder</NuxtLink>
         </div>
-        <nav class="flex items-center gap-[50px]">
-            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/'}" to="/">Home</NuxtLink>
-            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/playground'}" to="/playGroud">Playgroud</NuxtLink>
-            <NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/contact'}" to="/contact">Contact</NuxtLink>
+        <nav class="flex items-center gap-[30px]">
+            <div :class="{'px-0': path == '/', 'px-4': path != '/'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/'}" to="/">Home</NuxtLink></div>
+            <div :class="{'px-0': path == '/playground', 'px-4': path != '/playground'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/playground'}" to="/playGroud">Playground</NuxtLink></div>
+            <div :class="{'px-0': path == '/contact', 'px-4': path != '/comtact'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/contact'}" to="/contact">Contact</NuxtLink></div>
         </nav>
     </div>
 </template>
 
 <script setup>
     const path = ref(useRoute().path);
-</script>w
+</script>
