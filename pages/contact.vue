@@ -17,21 +17,21 @@
                 <div
                     class="bg-gradient-to-r from-[#09FDEE] to-[#16AAFE] mt-[200px] ml-[300px] rounded-[36px] max-w-[470px] py-2">
                     <div class="ml-[35px] max-w-[400px] grid grid-cols-5">
-                        <div class="flex justify-center max-w-[50px]">
+                        <a href="https://github.com/kang49" target="_blank" class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/github-logo.png">
-                        </div> <!--col1-->
-                        <div class="flex justify-center max-w-[50px]">
+                        </a> <!--col1-->
+                        <a href="https://discord.com/users/605305608085831681" target="_blank" class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/discord-logo.png">
-                        </div> <!--col2-->
-                        <div class="flex justify-center max-w-[50px]">
+                        </a> <!--col2-->
+                        <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/" target="_blank" class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/linkedin-logo.png">
-                        </div> <!--col3-->
-                        <div class="flex justify-center max-w-[50px]">
+                        </a> <!--col3-->
+                        <a href="https://www.instagram.com/kan_g49/" target="_blank" class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/ig-logo.png">
-                        </div> <!--col4-->
+                        </a> <!--col4-->
                         <div class="flex justify-center items-center">
                             <a
-                                href="https://github.com/kang49/bilibili-story-sharing/releases/latest/download/Bilibili.Story.Builder.shortcut">
+                                href="https://www.buymeacoffee.com/metakeen" target="_blank">
                                 <div
                                     class="rounded-[40px] p-[5px] px-2 py-2 w-fit text-white bg-gradient-to-r from-[#5DE0E6] to-[#004AAD] hover:text-white transition-all duration-200 hover:scale-[102%]">
                                     <h4 class="flex items-center"><i class="fas fa-gift mr-1"></i>Donate</h4>

@@ -170,7 +170,7 @@
                                 <a href="https://github.com/kang49/bilibili-story-sharing/issues" target="_blank">
                                     <div class="flex justify-end mr-[70px]">
                                         <div
-                                            class="mt-[30px] rounded-[40px] p-[5px] px-5 w-fit text-black bg-white hover:text-white transition-all duration-200 hover:scale-[102%]">
+                                            class="mt-[30px] rounded-[40px] p-[5px] px-5 w-fit text-black bg-white hover:text-green-500 transition-all duration-200 hover:scale-[102%]">
                                             <h4 class="flex items-center">Report Issue</h4>
                                         </div>
                                     </div>
