@@ -26,7 +26,7 @@
           <div :class="{ 'mt-[0px]': imageBase64 != '', 'hidden-element': imageBase64 == '' }">
             <img class="max-w-[180px] rounded-[15px]" v-if="imageBase64" :src="imageBase64" alt="Image" />
             <!-- Display the image -->
-            <a href="/playground" class="rounded-full bg-green-500 my-5 w-12 h-12 flex items-center justify-center text-white">
+            <a href="/playground" class="rounded-full bg-green-500 border-2 border-white my-5 w-12 h-12 flex items-center justify-center text-white">
               <i class="fas fa-redo-alt text-xl"></i>
             </a>
           </div>
