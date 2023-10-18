@@ -52,7 +52,7 @@
                                 <img class="object-cover h-[550px] ml-[170px] pt-[100px]" src="/img/bili-shortcut.png">
                             </div>
                             <div class="mt-[70px] relative">
-                                <img class="absolute object-cover h-[550px] ml-[400px] " src="/img/iPhone13 Frame.png">
+                                <img class="absolute object-cover h-[550px] ml-[400px] " src="/img/iPhone13-Frame.png">
                                 <img class="object-cover h-[539px] ml-[415px] pt-[10px] rounded-[30px]"
                                     src="/img/Step1 Gif.gif">
                             </div>
@@ -93,7 +93,7 @@
                         </div>
                         <div>
                             <div class="mt-[70px] relative">
-                                <img class="absolute object-cover h-[550px] ml-[200px] " src="/img/iPhone13 Frame.png">
+                                <img class="absolute object-cover h-[550px] ml-[200px] " src="/img/iPhone13-Frame.png">
                                 <img class="object-cover h-[539px] ml-[215px] pt-[10px] rounded-[30px]"
                                     src="/img/Step2 Gif.gif">
                             </div>
@@ -115,7 +115,7 @@
                     <div class="flex mt-5">
                         <div>
                             <div class="mt-[70px] relative">
-                                <img class="absolute object-cover h-[550px] ml-[100px]" src="/img/iPhone13 Frame.png">
+                                <img class="absolute object-cover h-[550px] ml-[100px]" src="/img/iPhone13-Frame.png">
                                 <img class="object-cover h-[539px] ml-[115px] pt-[10px] rounded-[30px]"
                                     src="/img/Step2 Gif.gif">
                             </div>
