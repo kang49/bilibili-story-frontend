@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-[#191919] min-h-[130px] grid grid-cols-3 gap-0.5">
+    <footer class="bg-[#191919] min-h-[130px] grid-cols-3 gap-0.5 hidden lg:grid">
         <div></div> <!-- col1 -->
         <div class="items-center my-auto">
             <center>

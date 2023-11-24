@@ -1,5 +1,7 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE]">
+    <MobileNotwork/>
+
+    <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] hidden lg:block">
         <Navbar />
 
         <div class="flex">
@@ -20,18 +22,20 @@
                         <a href="https://github.com/kang49" target="_blank" class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/github-logo.png">
                         </a> <!--col1-->
-                        <a href="https://discord.com/users/605305608085831681" target="_blank" class="flex justify-center max-w-[50px]">
+                        <a href="https://discord.com/users/605305608085831681" target="_blank"
+                            class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/discord-logo.png">
                         </a> <!--col2-->
-                        <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/" target="_blank" class="flex justify-center max-w-[50px]">
+                        <a href="https://www.linkedin.com/in/kankawee-aramrak-2bab53232/" target="_blank"
+                            class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/linkedin-logo.png">
                         </a> <!--col3-->
-                        <a href="https://www.instagram.com/kan_g49/" target="_blank" class="flex justify-center max-w-[50px]">
+                        <a href="https://www.instagram.com/kan_g49/" target="_blank"
+                            class="flex justify-center max-w-[50px]">
                             <img class="w-[50px] rounded-[16px]" src="/img/ig-logo.png">
                         </a> <!--col4-->
                         <div class="flex justify-center items-center">
-                            <a
-                                href="https://www.buymeacoffee.com/metakeen" target="_blank">
+                            <a href="https://www.buymeacoffee.com/metakeen" target="_blank">
                                 <div
                                     class="rounded-[40px] p-[5px] px-2 py-2 w-fit text-white bg-gradient-to-r from-[#5DE0E6] to-[#004AAD] hover:text-white transition-all duration-200 hover:scale-[102%]">
                                     <h4 class="flex items-center"><i class="fas fa-gift mr-1"></i>Donate</h4>
@@ -41,6 +45,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 <Footer /></template>

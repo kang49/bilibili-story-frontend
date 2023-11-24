@@ -1,5 +1,7 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE]">
+    <MobileNotwork/>
+
+    <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] hidden lg:block">
         <Navbar />
 
         <div>

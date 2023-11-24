@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE]">
+  <MobileNotwork/>
+  
+  <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] hidden lg:block">
     <Navbar />
 
     <div class="w-screen grid grid-rows-2" :class="{ 'max-h-[55vh]': imageBase64 != '' }">
@@ -58,7 +60,7 @@ export default defineComponent({
       if (!animeName || animeName === '') return;
 
       try {
-        const response = await axios.get(`http://g49node0.ddns.net:3000/api?biliLink=${animeName}`);
+        const response = await axios.get(`https://bilishare.tensormik.com/bili-api/api?biliLink=${animeName}`);
         if (response.status === 200) {
           this.imageBase64 = `data:image/png;base64,${response.data['imageBase64']}` as string; //update imageBase64 value
         }

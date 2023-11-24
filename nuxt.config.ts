@@ -9,7 +9,9 @@ export default defineNuxtConfig({
     dirs: ["~/components"],
   },
   css: ['~/assets/styles.css'],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+  ],
   app: {
     head: {
       charset: 'utf-16',
@@ -17,6 +19,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.15.0/css/all.css' },
       ],
+      title: 'Bilibili Story Sharing',
       script: [],
     }
   }
