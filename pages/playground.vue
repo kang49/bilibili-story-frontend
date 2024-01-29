@@ -1,6 +1,6 @@
 <template>
-  <MobileNotwork/>
-  
+  <MobileNotwork />
+
   <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] hidden lg:block">
     <Navbar />
 
@@ -28,7 +28,8 @@
           <div :class="{ 'mt-[0px]': imageBase64 != '', 'hidden-element': imageBase64 == '' }">
             <img class="max-w-[180px] rounded-[15px]" v-if="imageBase64" :src="imageBase64" alt="Image" />
             <!-- Display the image -->
-            <a href="/playground" class="rounded-full bg-green-500 border-2 border-white my-5 w-12 h-12 flex items-center justify-center text-white">
+            <a href="/playground"
+              class="rounded-full bg-green-500 border-2 border-white my-5 w-12 h-12 flex items-center justify-center text-white">
               <i class="fas fa-redo-alt text-xl"></i>
             </a>
           </div>
@@ -37,12 +38,11 @@
     </div>
   </div>
 
-  <Footer/>
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from 'axios';
 
 export default defineComponent({
   data() {
@@ -60,9 +60,14 @@ export default defineComponent({
       if (!animeName || animeName === '') return;
 
       try {
-        const response = await axios.get(`https://bilishare.tensormik.com/bili-api/api?biliLink=${animeName}`);
+        const url = `https://bilishare.tensormik.com/api/api?biliLink=${animeName}`;
+        const options = {
+          method: 'GET',
+        }
+        const response = await fetch(url, options);
+        const responseData = await response.json();
         if (response.status === 200) {
-          this.imageBase64 = `data:image/png;base64,${response.data['imageBase64']}` as string; //update imageBase64 value
+          this.imageBase64 = `data:image/png;base64,${responseData.imageBase64}` as string; //update imageBase64 value
         }
       } catch (error) {
         return 'anime not found' as string;
