@@ -24,6 +24,12 @@
                                     <h4 class="flex items-center"><i class="fab fa-github text-2xl mr-1"></i> Github</h4>
                                 </div>
                             </a>
+                            <a href="https://rapidapi.com/kang49/api/bilibili-story-builder2" target="_blank">
+                                <div
+                                    class="bg-white/40 rounded-[40px] p-[5px] px-5 w-fit text-black hover:text-white transition-all duration-200 hover:scale-[102%] ml-2">
+                                    <h4 class="flex items-center"><i class="fad fa-code text-2xl mr-1"></i>API</h4>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="w-full">
