@@ -27,6 +27,7 @@
           </div>
           <div :class="{ 'mt-[0px]': imageBase64 != '', 'hidden-element': imageBase64 == '' }">
             <img class="max-w-[180px] rounded-[15px]" v-if="imageBase64" :src="imageBase64" alt="Image" />
+            <h3 v-if="errormsg !== ''" class="text-white text-[18px] mt-[20px]">{{ errormsg }}</h3>
             <!-- Display the image -->
             <a href="/playground"
               class="rounded-full bg-green-500 border-2 border-white my-5 w-12 h-12 flex items-center justify-center text-white">
@@ -48,7 +49,8 @@ export default defineComponent({
   data() {
     return {
       searchQuery: '' as string, // Declare searchQuery as a string
-      imageBase64: '' as string
+      imageBase64: '' as string,
+      errormsg: '' as string
     };
   },
 
@@ -68,6 +70,9 @@ export default defineComponent({
         const responseData = await response.json();
         if (response.status === 200) {
           this.imageBase64 = `data:image/png;base64,${responseData.imageBase64}` as string; //update imageBase64 value
+        } else if (response.status === 400) {
+          this.imageBase64 = '/img/sadcat.jpg';
+          this.errormsg = responseData.error as string;
         }
       } catch (error) {
         return 'anime not found' as string;
