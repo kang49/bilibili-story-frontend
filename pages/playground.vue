@@ -62,7 +62,7 @@ export default defineComponent({
       if (!animeName || animeName === '') return;
 
       try {
-        const url = `https://bilishare.tensormik.com/api/api?biliLink=${animeName}`;
+        const url = `https://bilishare.kankawee.uk/api/api?biliLink=${animeName}`;
         const options = {
           method: 'GET',
         }
