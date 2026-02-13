@@ -12,7 +12,7 @@
     "product": "yarn install && nuxt build"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "2.6.4",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^4.1.2",
     "vue": "^3.3.4",
