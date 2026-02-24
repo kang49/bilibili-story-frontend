@@ -1,26 +1,26 @@
 <template>
-  <MobileNotwork />
+  <MobileNotwork class="hidden"/>
 
-  <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] hidden lg:block">
+  <div class="min-h-screen bg-gradient-to-r from-[#09D4FD] to-[#167BFE] pt-[100px] lg:pt-0">
     <Navbar />
 
-    <div class="w-screen grid grid-rows-2" :class="{ 'max-h-[55vh]': imageBase64 != '' }">
-      <div>
+    <div class="w-full h-full flex flex-col lg:grid lg:grid-rows-2" :class="{ 'max-h-[55vh]': imageBase64 != '' }">
+      <div class="p-4 lg:p-0">
         <center>
-          <h1 class="text-white font-bold text-[6vh] mt-[20vh]" :class="{ 'mt-[7vh]': imageBase64 != '' }">Try paste
+          <h1 class="text-white font-bold text-3xl lg:text-[6vh] leading-relaxed mt-10 lg:mt-[20vh]" :class="{ 'mt-[7vh]': imageBase64 != '' }">Try paste
             Bilibili link<br>for build your Story
             Card</h1>
         </center>
       </div> <!--row1-->
-      <div>
+      <div class="p-4 lg:p-0">
         <center>
-          <div class="mt-[7vh]" :class="{ 'hidden-element': imageBase64 != '' }">
-            <div class="w-[60vw]">
+          <div class="mt-4 lg:mt-[7vh]" :class="{ 'hidden-element': imageBase64 != '' }">
+            <div class="w-full lg:w-[60vw]">
               <div class="relative">
                 <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
                   <i class="fad fa-search"></i>
                 </span>
-                <input class="w-full h-[5vh] rounded-[40px] pl-10" placeholder="Search anime or paste link..."
+                <input class="w-full h-12 lg:h-[5vh] rounded-[40px] pl-10 pr-4" placeholder="Search anime or paste link..."
                   @keyup.enter="PlaygroundFunc" v-model="searchQuery" />
               </div>
             </div>
