@@ -1,29 +1,30 @@
 <template>
     <div class="fixed lg:relative top-0 left-0 w-full z-50 bg-gradient-to-r from-[#09fdee] to-[#16aafe] shadow-md lg:shadow-none border-b lg:border-none navbar">
         <div class="flex justify-between items-center px-6 lg:px-10 h-[70px] lg:h-[60px]">
-            <!-- Logo -->
             <div class="z-50">
                 <NuxtLink to="/" class="text-white drop-shadow-md lg:drop-shadow-none">Bilibili Story Sharing</NuxtLink>
             </div>
 
-            <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center gap-[30px]">
                 <div :class="{'px-0': path == '/', 'px-4': path != '/'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/'}" to="/">Home</NuxtLink></div>
                 <div :class="{'px-0': path == '/playground', 'px-4': path != '/playground'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/playground'}" to="/playground">Playground</NuxtLink></div>
                 <div :class="{'px-0': path == '/contact', 'px-4': path != '/contact'}"><NuxtLink :class="{'bg-white/40 px-4 py-1 rounded-full': path == '/contact'}" to="/contact">Contact</NuxtLink></div>
             </nav>
 
-            <!-- Mobile Menu Button -->
             <div class="lg:hidden z-50 flex items-center">
                 <button @click="hamberBTN" class="relative group w-8 h-6 focus:outline-none flex flex-col justify-between items-center">
-                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300 origin-left" :class="{ 'rotate-[42deg] w-[26px] translate-x-[2px]': isToggleMenu }"></div>
-                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300" :class="{ 'opacity-0': isToggleMenu }"></div>
-                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300 origin-left" :class="{ '-rotate-[42deg] w-[26px] translate-x-[2px]': isToggleMenu }"></div>
+                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300 origin-center" 
+                         :class="{ 'translate-y-[10.5px] rotate-45': isToggleMenu }"></div>
+                    
+                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300" 
+                         :class="{ 'opacity-0 scale-0': isToggleMenu }"></div>
+                         
+                    <div class="bg-white h-[3px] w-7 rounded transform transition-all duration-300 origin-center" 
+                         :class="{ '-translate-y-[10.5px] -rotate-45': isToggleMenu }"></div>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <transition
             enter-active-class="transition duration-200 ease-out"
             enter-from-class="transform opacity-0 translate-y-10"
