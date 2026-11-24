@@ -36,9 +36,9 @@ jobs:
             git checkout -f -B main origin/main
 
             if git ls-files --error-unmatch yarn.lock >/dev/null 2>&1; then
-              yarn install --frozen-lockfile
+              yarn install --frozen-lockfile --ignore-engines
             else
-              yarn install
+              yarn install --ignore-engines
             fi
             yarn build
 
