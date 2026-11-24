@@ -35,7 +35,7 @@ jobs:
             git fetch origin main
             git checkout -f -B main origin/main
 
-            if [ -f yarn.lock ]; then
+            if git ls-files --error-unmatch yarn.lock >/dev/null 2>&1; then
               yarn install --frozen-lockfile
             else
               yarn install
